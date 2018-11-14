@@ -34,7 +34,11 @@ namespace ObjectAndReferencesExercise
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Elephant holder;
+            holder = lloyd;
+            lloyd = lucinda;
+            lucinda = holder;
+            MessageBox.Show("Objects swapped");
         }
     }
 }
