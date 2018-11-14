@@ -40,5 +40,12 @@ namespace ObjectAndReferencesExercise
             lucinda = holder;
             MessageBox.Show("Objects swapped");
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            lloyd = lucinda;
+            lloyd.EarSize = 4321;
+            lloyd.WhoAmI();
+        }
     }
 }
